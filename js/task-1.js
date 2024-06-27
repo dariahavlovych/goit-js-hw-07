@@ -13,3 +13,5 @@ const getCategories = categoryList => {
     });
 }
 getCategories(categoryList);
+
+// TODO - add all styles
