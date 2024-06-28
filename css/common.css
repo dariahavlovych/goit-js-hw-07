@@ -185,3 +185,48 @@ input#name-input:active {
 .widget button {
   width: 148px;
 }
+
+/*  */
+/* Styles for task-6 */
+div#controls {
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background-color: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+div#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+  background-color: #f6f6fe;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+button[data-create] {
+  width: 120px;
+}
+
+button[data-destroy] {
+  width: 120px;
+  background-color: #ff4e4e;
+}
+
+button[data-destroy]:hover {
+  background-color: #ff7070;
+}
+
+div#boxes {
+  border-radius: 8px;
+  padding: 32px;
+  height: 134px;
+  background-color: #f6f6fe;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+}
