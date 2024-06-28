@@ -2,14 +2,15 @@ const categoryList = document.querySelector("ul#categories");
 const children = Array.from(categoryList.children);
 
 const getCategories = categoryList => {
-    let categoriesAmount = 0;
+    const categoriesAmount = children.length;
     let categoryTitle = "";
     let childElementsCount = 0;
+    console.log(`Number of categories: ${categoriesAmount}`);
     children.forEach(element => {
-        categoriesAmount += 1;
         categoryTitle = element.firstElementChild.textContent;
         childElementsCount = element.lastElementChild.childElementCount;
-        console.log(`Number of categories: ${categoriesAmount}\nCategory: ${categoryTitle}\nElements: ${childElementsCount}`);
+        console.log(`Category: ${categoryTitle}\nElements: ${childElementsCount}`);
     });
+    
 }
 getCategories(categoryList);
